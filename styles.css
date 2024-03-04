@@ -1,0 +1,35 @@
+/* Global styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0; /* Add a background color for better visibility */
+}
+
+/* Fixed-width container */
+.container {
+    max-width: 450px; /* Adjust this value as per your design */
+    height: 100vh;
+    margin: 0 auto; /* Center the container */
+    background-color: #ffffff; /* Add a background color for better visibility */
+    padding-bottom: 50px; /* Add padding to visually differentiate the container */
+}
+
+.page1 {
+    width: 100%;
+    height: 90vh;
+    background-color: green;
+}
+
+.page2 {
+    width: 100%;
+    height: 70vh;
+    background-color: blue;
+}
+
+/* Responsive styles */
+/* @media screen and (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+} */
