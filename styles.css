@@ -4,8 +4,10 @@ body {
     padding: 0;
     font-family: Arial, sans-serif;
     background-color: #f0f0f0;
-    height: 100vh; /* Set body height to viewport height */
-     overflow: hidden; /* Prevent scrolling */
+    height: 100vh;
+    /* Set body height to viewport height */
+    overflow: hidden;
+    /* Prevent scrolling */
 }
 
 .container {
@@ -23,12 +25,12 @@ body {
     justify-content: center;
     flex-direction: column;
     align-items: center;
-  }
+}
 
 .home .videoDesktop {
-  width: 100%;
-  height: 100vh;
-  object-fit: cover;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
 }
 
 /* .home video {
@@ -43,7 +45,39 @@ body {
     left: 50%;
     transform: translateX(-50%);
     padding-top: 20px;
-    /* height: 70px; */
+    width: 450px;
+    height: 100%;
+}
+
+.prevButton {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50px;
+    height: 50px;
+    display: none;
+    border-radius: 50%;
+    margin: 5px;
+}
+
+.nextButton {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50px;
+    height: 50px;
+    display: none;
+    border-radius: 50%;
+    margin: 5px;
+}
+
+.openButton {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-70px);
+    width: 80px;
+    height: 80px;
 }
 
 /* navigation css */
@@ -52,22 +86,26 @@ body {
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
+    width: 450px;
     height: 70px;
 
     /* position: relative;
     width: 100%;
     height: 70px; */
-    background: linear-gradient(45deg, #2196f3, #e91e63);
+    background: #181818;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
     /* background: blue; */
 }
+
 .navigation ul {
     display: flex;
     width: 350px;
 }
+
 .navigation ul li {
     position: relative;
     width: 70px;
@@ -75,6 +113,7 @@ body {
     list-style: none;
     z-index: 1;
 }
+
 .navigation ul li a {
     position: relative;
     display: flex;
@@ -85,21 +124,23 @@ body {
     text-align: center;
     font-weight: 500;
 }
+
 .navigation ul li a .icon {
     position: relative;
     display: block;
     line-height: 75px;
     font-size: 1.5em;
     text-align: center;
-    color: #fff;
+    color: #A6753E;
     transition: .5s;
 }
+
 /* .navigation ul li.active a .icon {
     transform: translateY(-32px);
 } */
 .navigation ul li a .text {
     position: absolute;
-    color: #fff;
+    color: #A6753E;
     font-weight: 400;
     font-size: .75em;
     letter-spacing: .05em;
@@ -107,10 +148,12 @@ body {
     transform: translateY(20px);
     transition: .5s;
 }
+
 .navigation ul li.active a .text {
     opacity: 1;
     transform: translateY(10px);
 }
+
 .navigation ul li a .circle {
     position: absolute;
     display: block;
@@ -118,16 +161,18 @@ body {
     height: 50px;
     background: transparent;
     border-radius: 50%;
-    border: 1.8px solid #fff;
+    border: 1.8px solid #A6753E;
     /* transform: translateY(-37px) scale(0); */
     transform: scale(0);
 }
+
 .navigation ul li.active a .circle {
     transition: .5s;
     transition-delay: .1s;
     /* transform: translateY(-37px) scale(1); */
     transform: scale(1);
 }
+
 /* .indicator {
     position: absolute;
     top: -50%;
@@ -178,4 +223,3 @@ body {
 .navigation ul li:nth-child(5).active~.indicator {
     transform: translateX(calc(70px * 4));
 } */
-
