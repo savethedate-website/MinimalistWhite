@@ -1,46 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Your Website</title>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <!-- <main> -->
-    <div class="container">
-      <div class="home" id="myHome">
-        <video
-          id="video1"
-          class="videoDesktop"
-          src="videos/WhiteMinimalist_PG1.mp4"
-          muted
-          playsinline
-        ></video>
 
-        <video
-          id="video2"
-          class="videoDesktop"
-          src="videos/WhiteMinimalist_PG2.mp4"
-          muted
-          playsinline
-          style="display: none"
-        ></video>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Your Website</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
 
-        <video
-          id="video3"
-          class="videoDesktop"
-          src="videos/WhiteMinimalist_PG3.mp4"
-          muted
-          playsinline
-          style="display: none"
-        ></video>
+<body>
+  <!-- <main> -->
+  <div class="container">
+    <div class="home" id="myHome">
 
-        <div class="buttons">
-          <button id="playButton">Play</button>
-          <button id="prevButton" style="display: none">Previous</button>
-          <button id="nextButton" style="display: none">Next</button>
-        </div>
+
+      <video id="video1" class="videoDesktop" src="videos/WhiteMinimalist_PG1.mp4" muted playsinline></video>
+
+      <video id="video2" class="videoDesktop" src="videos/WhiteMinimalist_PG2.mp4" muted playsinline
+        style="display: none"></video>
+
+      <video id="video3" class="videoDesktop" src="videos/WhiteMinimalist_PG3.mp4" muted playsinline
+        style="display: none"></video>
+
+      <div class="buttons">
+        <!-- <div class="buttonsContainer"> -->
+        <button class="prevButton" id="prevButton">Prev</button>
+        <button class="nextButton" id="nextButton">Next</button>
+
+        <button class="openButton" id="playButton">Open Invitation</button>
+        <!-- </div> -->
+
 
         <div class="navigation">
           <ul>
@@ -93,17 +82,14 @@
           </ul>
         </div>
       </div>
-    </div>
-    <!-- </main> -->
 
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
-    ></script>
-    <script
-      nomodule
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
-    ></script>
-    <script src="script.js"></script>
-  </body>
+
+    </div>
+  </div>
+  <!-- </main> -->
+
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script src="script.js"></script>
+</body>
+
 </html>
