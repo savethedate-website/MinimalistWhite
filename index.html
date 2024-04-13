@@ -5,6 +5,9 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Your Website</title>
+
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
   <link rel="stylesheet" href="styles.css" />
 </head>
 
@@ -20,62 +23,74 @@
       <video id="video3" class="videoDesktop" src="videos/WhiteMinimalist_PG3.mp4" muted playsinline
         style="display: none"></video>
 
-      <div class="buttons">
+      <div class="buttonsContainer">
         <button class="openButton" id="playButton">Open Invitation</button>
         <button class="prevButton" id="prevButton" style="display: none">Prev</button>
         <button class="nextButton" id="nextButton" style="display: none">Next</button>
       </div>
 
-      <div class="navigation">
-        <ul>
-          <li class="list active">
-            <a href="#">
-              <span class="icon">
-                <ion-icon name="home-outline"></ion-icon>
-              </span>
-              <!-- <span class="text">Home</span> -->
-              <span class="circle"></span>
-            </a>
-          </li>
-          <li class="list">
-            <a href="#">
-              <span class="icon">
-                <ion-icon name="person-outline"></ion-icon>
-              </span>
-              <!-- <span class="text">Profile</span> -->
-              <span class="circle"></span>
-            </a>
-          </li>
-          <li class="list">
-            <a href="#">
-              <span class="icon">
-                <ion-icon name="chatbubble-outline"></ion-icon>
-              </span>
-              <!-- <span class="text">Message</span> -->
-              <span class="circle"></span>
-            </a>
-          </li>
-          <li class="list">
-            <a href="#">
-              <span class="icon">
-                <ion-icon name="camera-outline"></ion-icon>
-              </span>
-              <!-- <span class="text">Photos</span> -->
-              <span class="circle"></span>
-            </a>
-          </li>
-          <li class="list">
-            <a href="#">
-              <span class="icon">
-                <ion-icon name="settings-outline"></ion-icon>
-              </span>
-              <!-- <span class="text">Settings</span> -->
-              <span class="circle"></span>
-            </a>
-          </li>
-          <div class="indicator"></div>
-        </ul>
+      <!-- <div class="navigationContainer">
+        <p>icon1</p>
+        <p>icon2</p>
+        <p>icon3</p>
+        <p>icon4</p>
+      </div> -->
+
+      <div id="myModal1" class="modal">
+        <div class="modal-content">
+          <span id="close1" class="close">&times;</span>
+          <p>This is your first modal content.</p>
+        </div>
       </div>
+
+      <div id="myModal2" class="modal">
+        <div class="modal-content">
+          <span id="close2" class="close">&times;</span>
+          <p>This is your second modal content.</p>
+        </div>
+      </div>
+
+      <div id="myModal3" class="modal">
+        <div class="modal-content">
+          <span id="close3" class="close">&times;</span>
+          <p>This is your third modal content.</p>
+        </div>
+      </div>
+
+      <div id="myModal4" class="modal">
+        <div class="modal-content">
+          <span id="close4" class="close">&times;</span>
+          <p>This is your fourth modal content.</p>
+        </div>
+      </div>
+
+      <nav class="mobile-bottom-nav">
+        <div id="myBtn1" class="mobile-bottom-nav__item">
+          <div class="mobile-bottom-nav__item-content">
+            <i class="material-icons">home</i>
+            one
+          </div>
+        </div>
+        <div id="myBtn2" class="mobile-bottom-nav__item">
+          <div class="mobile-bottom-nav__item-content">
+            <i class="material-icons">mail</i>
+            two
+          </div>
+        </div>
+        <div id="myBtn3" class="mobile-bottom-nav__item">
+          <div class="mobile-bottom-nav__item-content">
+            <i class="material-icons">person</i>
+            three
+          </div>
+        </div>
+
+        <div id="myBtn4" class="mobile-bottom-nav__item">
+          <div class="mobile-bottom-nav__item-content">
+            <i class="material-icons">phone</i>
+            four
+          </div>
+        </div>
+      </nav>
     </div>
   </div>
   <!-- </main> -->
